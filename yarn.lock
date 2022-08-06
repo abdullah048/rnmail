@@ -43,6 +43,15 @@
     json5 "^2.2.1"
     semver "^6.3.0"
 
+"@babel/eslint-parser@^7.5.4":
+  version "7.18.9"
+  resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.18.9.tgz#255a63796819a97b7578751bb08ab9f2a375a031"
+  integrity sha512-KzSGpMBggz4fKbRbWLNyPVTuQr6cmCcBhOyXTw/fieOVaw5oYAwcAj4a7UKcDYCPxQq+CG1NCDZH9e2JTXquiQ==
+  dependencies:
+    eslint-scope "^5.1.1"
+    eslint-visitor-keys "^2.1.0"
+    semver "^6.3.0"
+
 "@babel/generator@^7.14.0", "@babel/generator@^7.18.10":
   version "7.18.12"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.18.12.tgz#fa58daa303757bd6f5e4bbca91b342040463d9f4"
@@ -2317,6 +2326,11 @@ commander@^7.2.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
+commander@^9.3.0:
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-9.4.0.tgz#bc4a40918fefe52e22450c111ecd6b7acce6f11c"
+  integrity sha512-sRPT+umqkz90UA8M1yqYfnHlZA7fF6nSphDtxeywPZ49ysjxDQybzk13CL+mXekDRG92skbcqCLVovuCusNmFw==
+
 commander@~2.13.0:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
@@ -2768,6 +2782,14 @@ eslint-config-prettier@^8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
+eslint-scope@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.1.tgz#e786e59a66cb92b3f6c1fb0d508aab174848f48c"
+  integrity sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==
+  dependencies:
+    esrecurse "^4.3.0"
+    estraverse "^4.1.1"
+
 eslint-scope@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-7.1.1.tgz#fff34894c2f65e5226d3041ac480b4513a163642"
@@ -2783,7 +2805,7 @@ eslint-utils@^3.0.0:
   dependencies:
     eslint-visitor-keys "^2.0.0"
 
-eslint-visitor-keys@^2.0.0:
+eslint-visitor-keys@^2.0.0, eslint-visitor-keys@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz#f65328259305927392c938ed44eb0a5c9b2bd303"
   integrity sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==
@@ -2865,6 +2887,11 @@ esrecurse@^4.3.0:
   integrity sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==
   dependencies:
     estraverse "^5.2.0"
+
+estraverse@^4.1.1:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.3.0.tgz#398ad3f3c5a24948be7725e83d11a7de28cdbd1d"
+  integrity sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==
 
 estraverse@^5.1.0, estraverse@^5.2.0:
   version "5.3.0"
@@ -4489,6 +4516,13 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lorem-ipsum@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/lorem-ipsum/-/lorem-ipsum-2.0.8.tgz#f969a089f2ac6f19cf01b854b61beabb0e6f3cbc"
+  integrity sha512-5RIwHuCb979RASgCJH0VKERn9cQo/+NcAi2BMe9ddj+gp7hujl6BI+qdOG4nVsLDpwWEJwTVYXNKP6BGgbcoGA==
+  dependencies:
+    commander "^9.3.0"
+
 lru-cache@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
@@ -4900,6 +4934,11 @@ nanoid@^3.1.23, nanoid@^3.3.1, nanoid@^3.3.3:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
+
+nanoid@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.0.tgz#6e144dee117609232c3f415c34b0e550e64999a5"
+  integrity sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==
 
 nanomatch@^1.2.9:
   version "1.2.13"
