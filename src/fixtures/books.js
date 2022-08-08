@@ -1,26 +1,26 @@
 import { LoremIpsum } from 'lorem-ipsum'
-import { nanoid } from 'nanoid'
+import shortid from 'shortid'
 
 const DATA = []
 
 const lorem = new LoremIpsum({
-	wordsPerSentence: {
-		max: 16,
-		min: 4
-	}
+  wordsPerSentence: {
+    max: 16,
+    min: 4,
+  },
 })
 
 function capitalizeFirstLetter([first, ...rest]) {
-	first.toLocaleUpperCase() + rest.join('')
+  first.toLocaleUpperCase() + rest.join('')
 }
 
 for (let i = 0; i < 100; ++i) {
-	DATA.push({
-		id: nanoid(),
-		name: capitalizeFirstLetter(
-			lorem.generateSentences(Math.round(Math.random() * 4))
-		)
-	})
+  DATA.push({
+    id: shortid.generate(),
+    name: capitalizeFirstLetter(
+      lorem.generateSentences(Math.round(Math.random() * 4))
+    ),
+  })
 }
 
 export default DATA

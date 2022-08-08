@@ -50,6 +50,12 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+  <false/>
+  <key>UIAPPFonts</key>
+  <arry>
+    <string>
+      Feather.ttf
+    </string>
+  </arry>  
 </dict>
 </plist>
