@@ -3,6 +3,7 @@ import { createTheme } from '@shopify/restyle'
 // Palatte
 
 const p = {
+  white: 'white',
   black: 'black',
   red: 'red',
   blue: 'blue',
@@ -33,6 +34,7 @@ const theme = createTheme({
     tablet: 786,
   },
   colors: {
+    white: p.white,
     black: p.black,
     red: p.red,
     blue: p.blue,
@@ -54,7 +56,7 @@ const theme = createTheme({
     hg: 128,
   },
   statusBar: {
-    barStyle: 'dark-content'
+    barStyle: 'dark-content',
   },
   textVariants: {
     defaults: {
@@ -70,7 +72,7 @@ const theme = createTheme({
       bg: '$headerBarBackground',
       borderRadius: 'hg',
     },
-  }
+  },
 })
 
 export default theme

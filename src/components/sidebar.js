@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import { SafeAreaView } from 'react-native'
 import Text from '../atoms/text'
 import Box from '../atoms/box'
+import BookList from '../components/book-list'
 
-const Sidebar = () => {
+const Sidebar = ({ navigation }) => {
+  const handleBookListItemPress = useCallback(() => {
+    navigation.closeDrawer()
+  }, [navigation])
   return (
     <Box flex={1} bg="$sidebarBackground">
       <SafeAreaView>
@@ -11,6 +15,7 @@ const Sidebar = () => {
           RNMail
         </Text>
       </SafeAreaView>
+      <BookList onPressItem={handleBookListItemPress} />
     </Box>
   )
 }

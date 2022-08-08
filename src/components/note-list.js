@@ -7,10 +7,24 @@ import Box from '../atoms/box'
 
 const StyledFlatList = createBox(Animated.FlatList)
 
-const NoteList = ({ onScroll, contentInsetTop }) => {
-  const renderItem = useCallback(({ item }) => {
-    return <NoteListItem {...item} />
-  }, [])
+const NoteList = ({
+  onScroll,
+  contentInsetTop,
+  onItemPress,
+  onItemSwipeLeft,
+}) => {
+  const renderItem = useCallback(
+    ({ item }) => {
+      return (
+        <NoteListItem
+          {...item}
+          onPress={onItemPress}
+          onSwipeLeft={onItemSwipeLeft}
+        />
+      )
+    },
+    [onItemPress, onItemSwipeLeft]
+  )
 
   return (
     <StyledFlatList

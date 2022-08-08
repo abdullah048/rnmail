@@ -23,7 +23,7 @@ export default function useStickyHeader() {
     setHeaderBarHeight(e.nativeEvent.layout.height)
   }, [])
 
-  const handleEndDrag = useCallback((event) => {
+  const handleEndDrag = useCallback(event => {
     'worklet'
     if (progressY.value > 0.5 || event.contentOffset.y < headerBarHeight) {
       translationY.value = withTiming(maxY)
@@ -51,7 +51,7 @@ export default function useStickyHeader() {
         progressY.value = interpolate(translationY.value, [minY, maxY], [0, 1])
       },
       onEndDrag: handleEndDrag,
-      onMomentumEnd: handleEndDrag
+      onMomentumEnd: handleEndDrag,
     },
     [minY, maxY, headerBarHeight]
   )
@@ -71,4 +71,3 @@ export default function useStickyHeader() {
     headerBarHeight,
   }
 }
-

@@ -1,4 +1,6 @@
 import React, { forwardRef, useCallback, useImperativeHandle } from 'react'
+import { Dimensions } from 'react-native'
+import { PanGestureHandler } from 'react-native-gesture-handler'
 import {
   interpolate,
   runOnJS,
@@ -35,7 +37,7 @@ const SwipeableView = forwardRef((props, ref) => {
       const shouldbeDismissed = translateX.value < SWIPE_THRESHOLD
       if (shouldbeDismissed) {
         translateX.value = withTiming(-1)
-        runOnJS(invokeSwipeLeft)
+        runOnJS(invokeSwipeLeft)()
       } else {
         translateX.value = withTiming(0)
       }

@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import MainScreen from './screens/main'
 import Sidebar from './components/sidebar'
+import DetailScreen from './screens/details'
 
 const Stack = createNativeStackNavigator()
 const Drawer = createDrawerNavigator()
@@ -37,6 +38,7 @@ export default function Navigations() {
           headerShown: false,
         }}
       />
+      <Stack.Screen name="Detail" component={DetailScreen} options={{}} />
     </Stack.Navigator>
   )
 }

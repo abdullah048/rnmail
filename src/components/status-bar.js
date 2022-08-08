@@ -6,7 +6,10 @@ export default function StatusBar() {
   const theme = useTheme()
 
   return (
-    <NativeStatusBar animated={true} backgroundColor={theme.colors.$windowBackground || 'white'} barStyle={theme.statusBar?.barStyle} />
+    <NativeStatusBar
+      animated={true}
+      backgroundColor={theme.colors.$windowBackground || 'white'}
+      barStyle={theme.statusBar?.barStyle}
+    />
   )
 }
-

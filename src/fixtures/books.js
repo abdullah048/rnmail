@@ -10,9 +10,8 @@ const lorem = new LoremIpsum({
   },
 })
 
-function capitalizeFirstLetter([first, ...rest]) {
+const capitalizeFirstLetter = ([first, ...rest]) =>
   first.toLocaleUpperCase() + rest.join('')
-}
 
 for (let i = 0; i < 100; ++i) {
   DATA.push({
