@@ -5,7 +5,7 @@ import { TouchableOpacity } from '../atoms/touchable'
 
 export default function DetailScreen({ navigation, route }) {
   return (
-    <Box flex={1} alignItems="center" justifyContent="center">
+    <Box flex={1} alignItems="center" justifyContent="center" bg="$background">
       <Text>Detail Screen</Text>
       <Text m="lg">{JSON.stringify(route.params)}</Text>
       <TouchableOpacity

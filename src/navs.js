@@ -38,7 +38,13 @@ export default function Navigations() {
           headerShown: false,
         }}
       />
-      <Stack.Screen name="Detail" component={DetailScreen} options={{}} />
+      <Stack.Screen
+        name="Detail"
+        component={DetailScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack.Navigator>
   )
 }
